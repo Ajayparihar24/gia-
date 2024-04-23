@@ -12,7 +12,8 @@ const WhoWeAre = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="container py-8 flex md:items-center gap-8 md:flex-row flex-col"
+      style={{ maxWidth: "100%", overflowX: "hidden" }}
+      className="container py-8 flex md:items-center gap-8 md:flex-row flex-col overflow-x-hidden"
     >
       <motion.img
         src="/images/whoweare.png"

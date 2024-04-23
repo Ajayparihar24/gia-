@@ -13,7 +13,7 @@ const Banner = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="relative lg:h-[80vh] md:h-[70vh] h-[60vh] -mt-20"
+      className="relative md:min-h-[80vh] min-h-[76vh] -mt-20"
     >
       <motion.div
         variants={textVariant(1.2)}
