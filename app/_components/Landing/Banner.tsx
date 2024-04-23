@@ -41,7 +41,8 @@ const Banner = () => {
           </div>
         </div>
       </motion.div>
-      <motion.video
+      <motion.img variants={slideIn("right", "tween", 0.2, 1)} src="/images/banner.png" alt="banner"  className="w-full h-full absolute inset-0 object-cover" />
+      {/* <motion.video
         variants={slideIn("right", "tween", 0.2, 1)}
         className="w-full h-full absolute inset-0 object-cover"
         autoPlay
@@ -53,12 +54,11 @@ const Banner = () => {
         preload="none"
       >
         <source
-          // src="/api/video"
           src="/videos/iStock-1490250606.mp4"
           type="video/mp4"
           className="w-full h-full"
         />
-      </motion.video>
+      </motion.video> */}
 
       <div className="absolute inset-0 bg-black/10"></div>
     </motion.div>

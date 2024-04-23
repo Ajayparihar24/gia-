@@ -7,6 +7,7 @@ import Link from "next/link";
 import { IoChevronDown } from "react-icons/io5";
 import { usePathname } from "next/navigation";
 import Logo from "../Logo";
+import { staggerContainer } from "@/lib/motion";
 
 interface DrawerProps {
   show: boolean;
@@ -73,6 +74,10 @@ const Drawer: React.FC<DrawerProps> = ({ show, setShow }) => {
     <motion.div
       animate={show ? "open" : "closed"}
       variants={variants}
+      // variants={staggerContainer as any}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
       className=" bg-[#333333]  lg:hidden block"
     >
       <div ref={drawerRef} className="w-72 h-screen bg-[#333333]">
